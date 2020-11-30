@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   font-family: 'Josefin Sans', sans-serif;
+ }
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background: url("../img/contactimg.jpg") no-repeat center fixed;
+   background-size: cover;
+   padding-bottom: 50%;
+}
+/* header */
+.topnav-right{
+   position: absolute;
+   top: 5px;
+   right: 0;
+   padding: 0 15px 0 15px; 
+   /* z-index: 1; */
+}
+.topnav-right li{
+   position: relative;
+   list-style-type: none;
+   display: inline-block;
+}
+.topnav-right{
+   float: right;
+}
+.topnav-right li a{
+   display: grid;
+   width: 115px;
+   font-size: 17px;
+
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+   text-decoration: none;
+   color: #ffffff;
+}
+.topnav-right li.active a:hover{
+   background-color: #4dbd43;
+   box-shadow: 0 6px 12px 0 rgba(28, 66, 24, 0.5);
+   font-size: 16px;
+}
+.topnav-right li a:hover{
+   color:#4dbd43;
+}
+.topnav-right li.active a{
+   text-decoration: none;
+   -webkit-border-radius: 3;
+   -moz-border-radius: 3;
+   -o-border-radius: 3;
+   border-radius: 5px;
+   padding: 9px 20px;
+
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+   background-color: #429d39;
+   border: 0;
+   color: #fff;
+}
+
+.box{
+   width: 50%;
+   margin: 100px auto;
+   background: #fff;
+   border-radius: 7px;
+   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+.text{
+    margin-top: 5px;
+}
+.box .heading{
+   background:green;
+   height: 50px;
+   border-radius: 7px 7px 0px 0px;
+   padding: 10px;
+   color: #fff;
+   text-align: center;
+   font-family: "Rubik";
+   font-size: 25px;
+}
+
+.faqs{
+   padding: 0px 25px 25px;
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 3px;
+}
+
+details{
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 20px;
+   font-family: "Rubik";
+   font-size: 16px;
+   letter-spacing: 1px;
+   cursor: pointer;
+
+}
+
+details summary{
+   outline: none;
+}

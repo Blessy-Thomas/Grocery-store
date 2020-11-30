@@ -1,0 +1,131 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: url("../img/contactimg.jpg") no-repeat center fixed;
+        background-size: cover;
+        padding-bottom: 50%;
+    }
+    /* header */
+  .topnav-right{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 0 15px 0 15px; 
+    /* z-index: 1; */
+  }
+  .topnav-right li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+  }
+  .topnav-right{
+    float: right;
+  }
+  .topnav-right li a{
+    display: grid;
+    width: 115px;
+    font-size: 17px;
+
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .topnav-right li.active a:hover{
+    background-color: #4dbd43;
+    box-shadow: 0 6px 12px 0 rgba(28, 66, 24, 0.5);
+    font-size: 16px;
+  }
+  .topnav-right li a:hover{
+    color:#4dbd43;
+  }
+  .topnav-right li.active a{
+    text-decoration: none;
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    -o-border-radius: 3;
+    border-radius: 5px;
+    padding: 9px 20px;
+
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #429d39;
+    border: 0;
+    color: #fff;
+  }
+
+    
+    .wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 400px;
+      width: 100%;
+      background: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px rgb(36, 35, 33); 
+    }
+    
+    .wrapper h2{
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #332902;
+    }
+    
+    .wrapper .input_field{
+      margin-bottom: 10px;
+    }
+    
+    .wrapper .input_field input[type="text"],
+    .wrapper .input_field input[type="email"],
+    .wrapper textarea{
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+    }
+    
+    .wrapper textarea{
+      resize: none;
+      height: 85px;
+    }
+    
+    .wrapper .cl input[type="submit"]{
+      border: 0;
+      margin-top: 15px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      background: green;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    
+    #error_message{
+      margin-bottom: 20px;
+      background: #fe8b8e;
+      padding: 0px;
+      text-align: center;
+      font-size: 14px;
+      transition: all 0.5s ease;
+    }
